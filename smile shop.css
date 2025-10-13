@@ -1,0 +1,168 @@
+@font-face {
+  font-family: tanha;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./myfonts/Tanha.eot") format("eot"),
+    url("./myfonts/Tanha.ttf") format("ttf"),
+    url("./myfonts/Tanha.woff") format("woff"),
+    url("./myfonts/Tanha.woff2") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "tanha";
+}
+body {
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+/*header*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #3a3a3a;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header .nav ul {
+  display: flex;
+  list-style: none;
+}
+.header .nav ul li {
+  margin-left: 30px;
+}
+.header .nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.header .nav ul li a:hover {
+  color: #1dc7c7;
+}
+
+/*home*/
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 10), rgba(0, 0, 0, 0.5));
+  color: #fff;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.btn {
+  display: inline-block;
+  padding: 8px 25px;
+  color: #fff;
+  background: #1dc7c7;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #0c67b1;
+}
+/*محصولات*/
+.products {
+  padding: 80px 20px;
+  text-align: center;
+}
+.products h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-shadow: 1px 5px 18px #1dc7c7;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.product-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.product-card:hover {
+  transform: translateY(-10px);
+}
+.product-card img {
+  width: 300px;
+  border-radius: 15px;
+}
+.product-card button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background: #222;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 100px;
+}
+.product-card button:hover {
+  background: #1dc7c7;
+}
+/*فرم تماس*/
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.contact input {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  direction: rtl;
+}
+.contact textarea {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  direction: rtl;
+}
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-shadow: 1px 5px 18px #1dc7c7;
+  text-align: center;
+}
+.contact button {
+  padding: 15px;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 50px;
+}
+.contact button:hover {
+  background: #1dc7c7;
+}
+/*footer*/
+.footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
